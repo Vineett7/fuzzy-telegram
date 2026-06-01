@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .Main {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            height: 900px;
+            width: 100%;
+            padding-top: 100px;
+        }
+
+        .box{
+            animation-name: vineet;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes vineet {
+            0% { 
+                margin-bottom: 400px;
+                
+            }
+
+            50% {
+                margin-top: 400px;
+            }
+
+            100% {
+                margin-bottom: 400px;
+            }
+        }
+
+        .box1 {
+            background-color: blue;
+            box-shadow: 0 0 15px blue;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            animation-delay: 0.5s;
+        }
+        
+        .box2 {
+            background-color: aqua;
+            box-shadow: 0 0 15px aqua;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            animation-delay: 1s;
+        }
+        
+        .box3 {
+            background-color: chartreuse;
+            box-shadow: 0 0 15px chartreuse;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            animation-delay: 1.5s;
+        }
+
+        .box4 {
+            background-color: chocolate;
+            box-shadow: 0 0 15px chocolate;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Main">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
